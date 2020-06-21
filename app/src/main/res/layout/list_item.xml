@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This xml files helps WordAdapter class to stack up similar Views to display in
+      activity_common.xml -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        style="@style/List_Image"
+        android:id="@+id/Img"
+        tools:background="@drawable/number_one"
+    />
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/Img">
+
+        <TextView
+            style="@style/List_Text"
+            android:id="@+id/miwok_text_view"
+            tools:text="Gote"
+            tools:textColor="@android:color/white"
+            tools:background="@color/category_numbers"
+            android:textStyle="bold"
+            android:gravity="bottom"
+            />
+
+        <TextView
+            style="@style/List_Text"
+            android:id="@+id/default_text_view"
+            tools:text="One"
+            tools:textColor="@android:color/white"
+            tools:background="@color/category_numbers"
+            />
+
+    </LinearLayout>
+</RelativeLayout>
